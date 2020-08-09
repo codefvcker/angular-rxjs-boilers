@@ -3,16 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
+import { SearchTwoComponent } from './search-two/search-two.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SearchComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, SearchComponent, SearchTwoComponent],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -55,6 +55,8 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
       this.stream$.subscribe((value) => (this.value = value))
     );
 
+    // below doesnt make search it s just for practice
+
     this.test$ = fromEvent(this.start.nativeElement, 'click').pipe(
       scan((acc) => !acc, true),
       startWith(true),
